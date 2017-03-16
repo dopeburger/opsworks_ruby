@@ -9,6 +9,8 @@ default['nginx']['source']['modules'] = %w(
   nginx::http_stub_status_module
 )
 
+default['deploy']['timeout'] = nil
+
 # global
 default['defaults']['global']['environment'] = 'production'
 default['defaults']['global']['symlinks'] = {
